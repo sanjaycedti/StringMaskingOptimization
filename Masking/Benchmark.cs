@@ -7,9 +7,9 @@ namespace Masking;
 [MemoryDiagnoser]
 public class MaskingBenchmark
 {
-	private const string ClearValue = "Secret Password";
+	private const string ClearValue = "Secret Password"; //output: Sec************
 
-	[Benchmark]
+    [Benchmark]
 	public string MaskStringConcate()
 	{
 		var value = ClearValue.Substring(0, 3);
