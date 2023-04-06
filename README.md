@@ -1,5 +1,12 @@
 # StringMaskingOptimization
 
+BenchmarkDotNet=v0.13.5, OS=macOS Ventura 13.1 (22C65) [Darwin 22.2.0]
+Apple M1 Pro, 1 CPU, 8 logical and 8 physical cores
+.NET SDK=7.0.202
+  [Host]     : .NET 7.0.4 (7.0.423.11508), Arm64 RyuJIT AdvSIMD [AttachedDebugger]
+  DefaultJob : .NET 7.0.4 (7.0.423.11508), Arm64 RyuJIT AdvSIMD
+
+
 |            Method |       Mean |     Error |    StdDev |     Median |   Gen0 | Allocated |
 |------------------ |-----------:|----------:|----------:|-----------:|-------:|----------:|
 | MaskStringConcate | 122.027 ns | 2.3873 ns | 2.3446 ns | 120.924 ns | 0.0892 |     560 B |
